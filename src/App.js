@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import UseEffect from "./components/UseEffect";
 
-function App() {
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-screen overflow-x-hidden">
+      <div className="heading flex justify-center h-12">
+        <div className="text-2xl m-10 bg-amber-100 rounded h-10 w-40">
+          <h1 className="text-center">React Hooks</h1>
+        </div>
+      </div>
+      
+      <UseEffect/>
     </div>
   );
-}
+};
 
 export default App;
